@@ -1,4 +1,6 @@
-﻿namespace StartippWebServer.Models
+﻿using System.Collections.Generic;
+
+namespace StartippWebServer.Models
 {
     /// <summary>
     /// Gamer participating in the starcraft tournament.
@@ -9,5 +11,7 @@
         /// Name of the gamer.
         /// </summary>
         public virtual string Name { get; set; }
+
+        public IList<Game> Games { get; set; }
     }
 }

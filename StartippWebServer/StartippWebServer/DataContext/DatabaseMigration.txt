@@ -1,17 +1,17 @@
 ﻿//If no Configuration-file exist
-	Enable-Migrations -ContextTypeName AchievementDb -MigrationsDirectory DataContext -Force
-	Add-Migration -ConfigurationTypeName WebServer.DataContext.Configuration "InitialCreate" -Force
-	Update-Database -ConfigurationTypeName WebServer.DataContext.Configuration -Verbose
+	Enable-Migrations -ContextTypeName StartippDb -MigrationsDirectory DataContext -Force
+	Add-Migration -ConfigurationTypeName StartippWebServer.DataContext.DatabaseConfiguration "InitialCreate" -Force
+	Update-Database -ConfigurationTypeName StartippWebServer.DataContext.DatabaseConfiguration -Verbose
 
 //If no InitialCreate exist 
-	Add-Migration -ConfigurationTypeName WebServer.DataContext.Configuration "InitialCreate" -Force
-	Update-Database -ConfigurationTypeName WebServer.DataContext.Configuration -Verbose
+	Add-Migration -ConfigurationTypeName StartippWebServer.DataContext.DatabaseConfiguration "InitialCreate" -Force
+	Update-Database -ConfigurationTypeName StartippWebServer.DataContext.DatabaseConfiguration -Verbose
 
 //If you want to update or add the Database
-	Update-Database -ConfigurationTypeName WebServer.DataContext.Configuration -Verbose
+	Update-Database -ConfigurationTypeName StartippWebServer.DataContext.DatabaseConfiguration -Verbose
 
 
 //If the entities behind have changed
 	Update-Database -TargetMigration $InitialDatabase
-	Add-Migration -ConfigurationTypeName WebServer.DataContext.Configuration "InitialCreate" -Force
-	Update-Database -ConfigurationTypeName WebServer.DataContext.Configuration -Verbose
+	Add-Migration -ConfigurationTypeName StartippWebServer.DataContext.DatabaseConfiguration "InitialCreate" -Force
+	Update-Database -ConfigurationTypeName StartippWebServer.DataContext.DatabaseConfiguration -Verbose

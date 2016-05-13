@@ -7,6 +7,7 @@ namespace StartippWebServer.Models
         public virtual IList<Game> Games { get; set; }
         public virtual PointPolicy PointPolicy { get; set; }
         public virtual PlayoffFormat PlayoffFormat { get; set; }
+        public virtual Tournament Tournament { get; set; }
     }
 
     public enum PlayoffFormat

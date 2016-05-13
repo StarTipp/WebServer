@@ -1,4 +1,6 @@
-﻿namespace StartippWebServer.Models
+﻿using System.Collections.Generic;
+
+namespace StartippWebServer.Models
 {
     /// <summary>
     /// One single game of a tournament.
@@ -10,6 +12,8 @@
         public virtual byte WinsGamer1 { get; set; }
         public virtual byte WinsGamer2 { get; set; }
         public virtual GameState GameState { get; set; }
+        public virtual IList<GameBet> GameBets { get; set; }
+        public virtual TournamentRound TournamentRound { get; set; }
     }
 
     /// <summary>

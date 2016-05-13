@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Security.AccessControl;
 
 namespace StartippWebServer.Models
 {
@@ -8,5 +7,6 @@ namespace StartippWebServer.Models
         public virtual string Name { get; set; }
         public virtual IList<Better> Betters { get; set; }
         public virtual IList<Tournament> Tournaments { get; set; }
+        public virtual IList<GameBet> GameBets { get; set; }
     }
 }
