@@ -208,6 +208,10 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="DataContext\201605132137286_InitialCreate.cs" />
+    <Compile Include="DataContext\201605132137286_InitialCreate.Designer.cs">
+      <DependentUpon>201605132137286_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContext\DatabaseConfiguration.cs" />
     <Compile Include="DataContext\IStartippDb.cs" />
     <Compile Include="DataContext\StartippDb.cs" />
@@ -299,6 +303,11 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="DataContext\201605132137286_InitialCreate.resx">
+      <DependentUpon>201605132137286_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

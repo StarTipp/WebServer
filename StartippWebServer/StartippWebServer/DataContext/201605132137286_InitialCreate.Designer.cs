@@ -13,7 +13,7 @@ namespace StartippWebServer.DataContext
         
         string IMigrationMetadata.Id
         {
-            get { return "201605132126499_InitialCreate"; }
+            get { return "201605132137286_InitialCreate"; }
         }
         
         string IMigrationMetadata.Source
